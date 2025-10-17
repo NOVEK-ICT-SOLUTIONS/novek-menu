@@ -1,10 +1,10 @@
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
 import compression from 'compression';
+import cors from 'cors';
 import dotenv from 'dotenv';
-import { apiRouter } from './routes/index.js';
+import express from 'express';
+import helmet from 'helmet';
 import { errorHandler } from './middleware/errorHandler.js';
+import { apiRouter } from './routes/index.js';
 
 dotenv.config();
 
