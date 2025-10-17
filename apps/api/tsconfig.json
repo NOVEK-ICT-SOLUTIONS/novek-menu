@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@novek-menus/shared": ["../../packages/shared/src/index.ts"],
+      "@novek-menus/shared/*": ["../../packages/shared/src/*"],
+      "@novek-menus/config": ["../../packages/config/src/index.ts"],
+      "@novek-menus/config/*": ["../../packages/config/src/*"],
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../../packages/shared" },
+    { "path": "../../packages/config" }
+  ]
+}

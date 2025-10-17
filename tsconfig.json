@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "paths": {
+      "@novek-menus/shared": ["./packages/shared/src/index.ts"],
+      "@novek-menus/shared/*": ["./packages/shared/src/*"],
+      "@novek-menus/config": ["./packages/config/src/index.ts"],
+      "@novek-menus/config/*": ["./packages/config/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}
